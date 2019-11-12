@@ -1,0 +1,111 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizza<br><small>Delicous</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="addstore" class="nav-link">Add Store</a></li>
+            <li class="nav-item"><a href="showstore" class="nav-link">Show Store</a></li>
+            <li class="nav-item"><a href="addpizza" class="nav-link">Add Pizza</a></li>
+            <li class="nav-item"><a href="showpizza" class="nav-link">Show Pizza</a></li>
+            <li class="nav-item"><a href="logout" class="nav-link">Logout</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <div align="center">
+        <h1>Register Store</h1>
+    </div>
+    <div align="center">
+       
+    <table>
+      <div class="form-group">
+        <tr>
+            <td>Store Name</td>
+            <td>
+                    <input id="storeName" storeName="storeName" class="form-control"
+                    required minlength="5" pattern="[a-zA-Z ]*"
+                    [(ngModel)]="store.storeName" #storeName="ngModel" (blur)="validate()" >
+              
+              <div *ngIf="storeName.invalid && (storeName.dirty || storeName.touched)"
+                  class="alert alert-danger">
+                <div *ngIf="storeName.errors.required">
+            storeName is required.
+                </div>
+                <div *ngIf="storeName.errors.minlength">
+            storeName must be at least 5 characters long.
+                </div>
+                <div *ngIf="storeName.errors.pattern">
+                    Alphanumeric only
+                </div>
+             </div>
+            </td>
+        </tr>
+      </div>
+    
+        
+   
+        
+    
+
+    
+      <div class="form-group">
+      <tr>
+            <td>Store Address</td>
+            <td>
+                    <input id="storeAddress" storeAddress="storeAddress" class="form-control"
+                    required
+                    [(ngModel)]="store.storeAddress" #storeAddress="ngModel" (blur)="validate()">
+              
+              <div *ngIf="storeAddress.invalid && (storeAddress.dirty || storeAddress.touched)"
+                  class="alert alert-danger">
+              
+                <div *ngIf="storeAddress.errors.required">
+            Store Address is required.
+              </div>
+          </div>
+            </td>
+        </tr>
+      </div>
+    
+      <div class="form-group">
+      <tr>
+            <td>Store Number</td>
+            <td>
+                    <input id="storePhoneNumber" storePhoneNumber="storePhoneNumber" class="form-control"
+                    required pattern="(0/91)?[7-9][0-9]{9}"
+                    [(ngModel)]="store.storePhoneNumber" #storePhoneNumber="ngModel" (blur)="validate()">
+              
+              <div *ngIf="storePhoneNumber.invalid && (storePhoneNumber.dirty || storePhoneNumber.touched)"
+                  class="alert alert-danger"> 
+                <div *ngIf="storePhoneNumber.errors.required">
+            Mobile number is required.
+              </div>
+            <div *ngIf="storePhoneNumber.errors.pattern">
+            Mobile number should contain 10 digits.
+              </div>
+          </div>
+            </td>
+        </tr>
+      </div>
+    
+    
+      
+    
+      
+    
+        <tr>
+            <td><input type="button" [disabled]="status" value="Add Store" [routerLink]="['/showstore']" (click)="addStore()" /></td>
+        </tr>
+    
+        <font color="red" size="2px">{{errorMessage}}</font>
+    </table>
+    </div>
+
+    
+    

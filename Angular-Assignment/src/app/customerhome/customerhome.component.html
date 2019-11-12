@@ -1,0 +1,58 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizza<br><small>Delicous</small></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="oi oi-menu"></span> Menu
+            </button>
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item"><a href="logout" class="nav-link">Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div  align="center">
+    <h1>Select Store</h1>
+
+
+  </div>
+    <div  align="center">
+        <select [(ngModel)]="storeSelected" (change)="onChangestore(storeSelected)">
+            <option *ngFor="let center of storeList" value={{center.storeId}}>{{center.storeName}}</option>
+        </select>
+
+    </div>
+
+    <div align="center">
+        <h1>Select Pizza</h1>
+    </div>
+    <div align="center">
+        <div>
+            <table class="table table-bordered">
+                    <thead>
+                <tr>
+                <th>Pizza Id</th>
+                <th>Pizza Name</th>
+                <th>Pizza Description</th>
+                <th>Pizza Cost</th>
+                <th>Buy Pizza</th>
+        
+            </tr>
+        </thead>
+
+        
+        <tbody>
+            <tr *ngFor="let hot of pizzaList; let i = index">
+                <td>{{hot.pizzaId}}</td>
+                <td>{{hot.pizzaName}}</td>
+                <td>{{hot.pizzaDescription}}</td>
+                <td>{{hot.pizzaCost}}</td>
+                <td><input type="Button" value="Buy" [routerLink]="['/booked']" (click)="buyPizza(pizzaList[i])" /></td>
+            </tr>
+        </tbody> 
+    </table>
+        </div>

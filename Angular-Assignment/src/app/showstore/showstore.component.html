@@ -1,0 +1,102 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizza<br><small>Delicous</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="addstore" class="nav-link">Add Store</a></li>
+            <li class="nav-item"><a href="showstore" class="nav-link">Show Store</a></li>
+            <li class="nav-item"><a href="addpizza" class="nav-link">Add Pizza</a></li>
+            <li class="nav-item"><a href="showpizza" class="nav-link">Show Pizza</a></li>
+            <li class="nav-item"><a href="logout" class="nav-link">Logout</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <h1>Show Store</h1>
+
+
+        <!-- <td>City Id</td>
+        <div>
+            <select [(ngModel)]="citySelected" (change)="onChangeCity(citySelected)">
+                <option *ngFor="let center of cityList" value={{center.cityId}}>{{center.cityName}}</option>
+            </select>
+
+        </div> -->
+
+        <!-- <td><span class="form_error" id="cityid_error_message" style="color:red;"></span></td> -->
+    <div>
+    <table class="table table-bordered">
+            <thead>
+        <tr>
+        <th>Store Id</th>
+        <th>Store Name</th>
+        <th>Store Address</th>
+        <th>Store Phone Number</th>
+
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let sto of storeList; let i = index">
+        <td>{{sto.storeId}}</td>
+        <td>{{sto.storeName}}</td>
+        <td>{{sto.storeAddress}}</td>
+        <!-- <td><input type = "button" value = "Update" (click) = "updateHotel(pro)" /></td> -->
+        <td><input type="Button" value="Update" (click)="initiateUpdateStore(storeList[i].storeId)" /></td>
+        <td><input type="Button" value="Delete" (click)="deleteStore(storeList[i].storeId)" /></td>
+    </tr>
+
+
+    <div *ngIf="update else falseblock">
+        <table>
+            <tr>
+                <th>Store Name</th>
+                <th>Store Address</th>
+                <th>Store Phone Number</th>
+            </tr>
+            <tr>
+
+                
+                <td><input type="text" [(ngModel)]='modelStore.storeName' /></td>
+                <td><input type="text" [(ngModel)]='modelStore.storeAddress' /></td>
+                <td><input type="text" [(ngModel)]='modelStore.storePhoneNumber' /></td>
+                <td><input type="Button" value="Update" (click)="updateStore()" /></td>
+
+            </tr>
+
+        </tbody>
+        </table>
+
+        <ng-template #falseblock>
+        </ng-template>
+    </div>
+ 
+
+    <!-- <pagination-controls (pageChange)="p = $event"></pagination-controls> -->
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

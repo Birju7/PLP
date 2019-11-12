@@ -1,0 +1,120 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><span class="flaticon-pizza-1 mr-1"></span>Pizza<br><small>Delicous</small></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="addstore" class="nav-link">Add Store</a></li>
+            <li class="nav-item"><a href="showstore" class="nav-link">Show Store</a></li>
+            <li class="nav-item"><a href="addpizza" class="nav-link">Add Pizza</a></li>
+            <li class="nav-item"><a href="showpizza" class="nav-link">Show Pizza</a></li>
+            <li class="nav-item"><a href="logout" class="nav-link">Logout</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+        <div align="center">
+            <h1>Add Pizza</h1>
+        </div>
+        <div align="center">
+           
+        <table>
+                <div class="form-group">
+                <td>Select Store</td>
+                <div>
+                    <select [(ngModel)]="storeSelected">
+                        <option *ngFor="let center of storeList" value={{center.storeId}}>{{center.storeName}}</option>
+                    </select>
+        
+                </div>
+            </div>
+          <div class="form-group">
+            <tr>
+                <td>Pizza Name</td>
+                <td>
+                        <input id="pizzaName" pizzaName="pizzaName" class="form-control"
+                        required minlength="5" pattern="[a-zA-Z ]*"
+                        [(ngModel)]="pizza.pizzaName" #pizzaName="ngModel" (blur)="validate()" >
+                  
+                  <div *ngIf="pizzaName.invalid && (pizzaName.dirty || pizzaName.touched)"
+                      class="alert alert-danger">
+                    <div *ngIf="pizzaName.errors.required">
+                pizzaName is required.
+                    </div>
+                    <div *ngIf="pizzaName.errors.minlength">
+                pizzaName must be at least 5 characters long.
+                    </div>
+                    <div *ngIf="pizzaName.errors.pattern">
+                        Alphanumeric only
+                    </div>
+                 </div>
+                </td>
+            </tr>
+          </div>
+
+
+          <div class="form-group">
+            <tr>
+                  <td>Pizza Cost</td>
+                  <td>
+                          <input id="pizzaCost" pizzaCost="pizzaCost" class="form-control"
+                          required pattern="[1-9][0-9]{1,4}"
+                          [(ngModel)]="pizza.pizzaCost" #pizzaCost="ngModel" (blur)="validate()">
+                    
+                    <div *ngIf="pizzaCost.invalid && (pizzaCost.dirty || pizzaCost.touched)"
+                        class="alert alert-danger"> 
+                      <div *ngIf="pizzaCost.errors.required">
+                  Pizza Cost is required.
+                    </div>
+                  <div *ngIf="pizzaCost.errors.pattern">
+                  Should not be Empty and should contain numeric data only.
+                    </div>
+                </div>
+                  </td>
+              </tr>
+            </div>
+        
+            
+       
+            
+        
+    
+        
+          <div class="form-group">
+          <tr>
+                <td>Pizza Description</td>
+                <td>
+                        <input id="pizzaDescription" pizzaDescription="pizzaDescription" class="form-control"
+                        required
+                        [(ngModel)]="pizza.pizzaDescription" #pizzaDescription="ngModel" (blur)="validate()">
+                  
+                  <div *ngIf="pizzaDescription.invalid && (pizzaDescription.dirty || pizzaDescription.touched)"
+                      class="alert alert-danger">
+                  
+                    <div *ngIf="pizzaDescription.errors.required">
+                Last name is required.
+                  </div>
+              </div>
+                </td>
+            </tr>
+          </div>
+        
+       
+        
+        
+          
+        
+         
+        
+            <tr>
+                <td><input type="button" [disabled]="status" value="Add Pizza" [routerLink]="['/showpizza']"(click)="addPizza(storeSelected)" /></td>
+            </tr>
+        
+            <font color="red" size="2px">{{errorMessage}}</font>
+        </table>
+        </div>
