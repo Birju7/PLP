@@ -1,0 +1,182 @@
+2019-11-12 09:27:11,751 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Starting PizzaOrderingApplication on DESKTOP-S7M44P4 with PID 6176 (D:\HotelManagement\target\classes started by Admin in D:\HotelManagement)
+2019-11-12 09:27:11,753 DEBUG com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-12 09:27:11,753 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] The following profiles are active: production
+2019-11-12 09:27:16,328 DEBUG com.cg.pizzaordering.configuration.JwtRequestFilter [restartedMain] Filter 'jwtRequestFilter' configured for use
+2019-11-12 09:27:17,228 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Started PizzaOrderingApplication in 5.972 seconds (JVM running for 6.803)
+2019-11-12 09:54:01,832 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Starting PizzaOrderingApplication on DESKTOP-S7M44P4 with PID 816 (D:\HotelManagement\target\classes started by Admin in D:\HotelManagement)
+2019-11-12 09:54:01,834 DEBUG com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-12 09:54:01,834 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] The following profiles are active: production
+2019-11-12 09:54:06,683 DEBUG com.cg.pizzaordering.configuration.JwtRequestFilter [restartedMain] Filter 'jwtRequestFilter' configured for use
+2019-11-12 09:54:07,646 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Started PizzaOrderingApplication in 6.315 seconds (JVM running for 7.383)
+2019-11-12 10:07:09,150 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 10:07:09,187 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 10:07:10,214 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 10:07:10,221 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] Fetching user object linked with user Email..
+2019-11-12 10:07:11,648 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 10:07:11,651 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] getStores in Controller
+2019-11-12 10:07:11,667 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-4] showStore method
+2019-11-12 10:07:11,668 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] Returning store list
+2019-11-12 10:07:13,189 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 10:07:13,192 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] getStores in Controller
+2019-11-12 10:07:13,197 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-5] showStore method
+2019-11-12 10:07:13,198 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] Returning store list
+2019-11-12 10:07:13,798 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 10:07:13,809 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] getPizzas in Controller
+2019-11-12 10:07:13,825 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Returning pizza list
+2019-11-12 10:07:19,519 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 10:07:21,680 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-8] JWT Token does not begin with Bearer String
+2019-11-12 10:07:24,315 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 10:07:24,318 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] getStores in Controller
+2019-11-12 10:07:24,322 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-9] showStore method
+2019-11-12 10:07:24,324 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] Returning store list
+2019-11-12 10:07:26,622 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 10:07:26,626 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] getPizzas in Controller
+2019-11-12 10:07:26,634 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] Returning pizza list
+2019-11-12 10:12:38,417 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 10:12:44,973 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 10:12:44,976 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] getStores in Controller
+2019-11-12 10:12:44,981 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-3] showStore method
+2019-11-12 10:12:44,982 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] Returning store list
+2019-11-12 10:12:55,564 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 10:12:55,690 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 10:12:55,691 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] Fetching user object linked with user Email..
+2019-11-12 10:40:07,726 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 10:40:07,728 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] getStores in Controller
+2019-11-12 10:40:07,734 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] showStore method
+2019-11-12 10:40:07,735 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] Returning store list
+2019-11-12 12:09:49,907 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:09:49,945 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 12:09:49,951 INFO com.cg.pizzaordering.service.JwtUserDetailsService [http-nio-9088-exec-10] Checking if the email is already registered..
+2019-11-12 12:09:49,956 INFO com.cg.pizzaordering.service.JwtUserDetailsService [http-nio-9088-exec-10] Email is unique. Checking if the phone number is already registered..
+2019-11-12 12:09:49,962 INFO com.cg.pizzaordering.service.JwtUserDetailsService [http-nio-9088-exec-10] Phone number is also unique. Registering the user..
+2019-11-12 12:10:03,076 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 12:10:03,114 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 12:10:46,854 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 12:10:47,017 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 12:10:47,018 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] Fetching user object linked with user Email..
+2019-11-12 12:10:47,059 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 12:10:47,062 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] getStores in Controller
+2019-11-12 12:10:47,067 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-5] showStore method
+2019-11-12 12:10:47,069 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] Returning store list
+2019-11-12 12:10:48,837 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 12:10:48,838 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] getStores in Controller
+2019-11-12 12:10:48,842 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-6] showStore method
+2019-11-12 12:10:48,843 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Returning store list
+2019-11-12 12:11:40,114 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 12:11:40,116 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] getStores in Controller
+2019-11-12 12:11:40,120 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] showStore method
+2019-11-12 12:11:40,121 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] Returning store list
+2019-11-12 12:12:41,218 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:12:41,222 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] getPizzas in Controller
+2019-11-12 12:12:41,231 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] Returning pizza list
+2019-11-12 12:13:11,537 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 12:13:11,662 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 12:13:11,664 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-1] Fetching user object linked with user Email..
+2019-11-12 12:13:47,842 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 12:13:47,858 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 12:13:47,859 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] getStores in Controller
+2019-11-12 12:13:47,863 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-3] showStore method
+2019-11-12 12:13:47,864 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] Returning store list
+2019-11-12 12:13:47,878 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 12:13:47,885 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] Store added in Controller
+2019-11-12 12:13:47,907 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-4] Store addded
+2019-11-12 12:13:57,768 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 12:13:57,770 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] getStores in Controller
+2019-11-12 12:13:57,774 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-5] showStore method
+2019-11-12 12:13:57,775 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] Returning store list
+2019-11-12 12:14:27,872 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 12:14:27,875 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Store added in Controller
+2019-11-12 12:14:27,884 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-6] Store addded
+2019-11-12 12:14:27,893 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 12:14:27,894 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] getStores in Controller
+2019-11-12 12:14:27,899 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] showStore method
+2019-11-12 12:14:27,900 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] Returning store list
+2019-11-12 12:14:59,582 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-8] JWT Token does not begin with Bearer String
+2019-11-12 12:14:59,596 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:15:07,491 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 12:15:07,493 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] getStores in Controller
+2019-11-12 12:15:07,496 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-10] showStore method
+2019-11-12 12:15:07,498 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] Returning store list
+2019-11-12 12:15:28,719 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 12:15:28,742 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 12:15:28,754 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-2] Store removed with Id: 3
+2019-11-12 12:15:37,287 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 12:15:37,299 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 12:15:37,307 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-4] Store removed with Id: 1
+2019-11-12 12:15:58,859 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 12:15:58,862 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-5] Store added in Controller
+2019-11-12 12:15:58,869 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-5] Store addded
+2019-11-12 12:15:58,880 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 12:15:58,882 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] getStores in Controller
+2019-11-12 12:15:58,886 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-6] showStore method
+2019-11-12 12:15:58,887 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Returning store list
+2019-11-12 12:16:56,875 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 12:16:56,877 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] Store added in Controller
+2019-11-12 12:16:56,886 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] Store addded
+2019-11-12 12:16:56,898 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-8] JWT Token does not begin with Bearer String
+2019-11-12 12:16:56,899 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] getStores in Controller
+2019-11-12 12:16:56,903 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-8] showStore method
+2019-11-12 12:16:56,904 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] Returning store list
+2019-11-12 12:17:05,181 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:17:05,182 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] getStores in Controller
+2019-11-12 12:17:05,186 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-9] showStore method
+2019-11-12 12:17:05,187 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] Returning store list
+2019-11-12 12:17:09,789 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 12:17:09,791 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] getStores in Controller
+2019-11-12 12:17:09,794 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-10] showStore method
+2019-11-12 12:17:09,796 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] Returning store list
+2019-11-12 12:17:12,215 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 12:17:12,217 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-1] getPizzas in Controller
+2019-11-12 12:17:12,223 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-1] No pizzas present in store with Id: 4
+2019-11-12 12:17:14,006 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 12:17:14,009 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-2] getPizzas in Controller
+2019-11-12 12:17:14,015 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-2] No pizzas present in store with Id: 2
+2019-11-12 12:17:15,294 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 12:17:15,297 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] getPizzas in Controller
+2019-11-12 12:17:15,303 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-3] No pizzas present in store with Id: 5
+2019-11-12 12:17:19,430 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-4] JWT Token does not begin with Bearer String
+2019-11-12 12:17:19,431 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] getStores in Controller
+2019-11-12 12:17:19,435 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-4] showStore method
+2019-11-12 12:17:19,436 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-4] Returning store list
+2019-11-12 12:18:07,551 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 12:18:07,568 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 12:18:07,569 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] getStores in Controller
+2019-11-12 12:18:07,575 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-6] showStore method
+2019-11-12 12:18:07,576 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Returning store list
+2019-11-12 12:18:07,582 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 12:18:07,603 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] Pizza added
+2019-11-12 12:18:17,761 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-8] JWT Token does not begin with Bearer String
+2019-11-12 12:18:17,762 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] getStores in Controller
+2019-11-12 12:18:17,766 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-8] showStore method
+2019-11-12 12:18:17,768 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] Returning store list
+2019-11-12 12:18:49,873 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:18:49,882 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-9] Pizza added
+2019-11-12 12:18:49,894 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-10] JWT Token does not begin with Bearer String
+2019-11-12 12:18:49,895 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] getStores in Controller
+2019-11-12 12:18:49,899 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-10] showStore method
+2019-11-12 12:18:49,900 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-10] Returning store list
+2019-11-12 12:18:52,351 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-1] JWT Token does not begin with Bearer String
+2019-11-12 12:18:52,354 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-1] getPizzas in Controller
+2019-11-12 12:18:52,362 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-1] Returning pizza list
+2019-11-12 12:19:05,871 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-2] JWT Token does not begin with Bearer String
+2019-11-12 12:19:05,882 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-3] JWT Token does not begin with Bearer String
+2019-11-12 12:19:05,896 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-3] Pizza updated with Id: 2
+2019-11-12 12:20:34,165 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-5] JWT Token does not begin with Bearer String
+2019-11-12 12:20:34,292 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-6] JWT Token does not begin with Bearer String
+2019-11-12 12:20:34,294 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-6] Fetching user object linked with user Email..
+2019-11-12 12:20:34,326 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-7] JWT Token does not begin with Bearer String
+2019-11-12 12:20:34,328 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] getStores in Controller
+2019-11-12 12:20:34,331 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-7] showStore method
+2019-11-12 12:20:34,332 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-7] Returning store list
+2019-11-12 12:20:36,090 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-8] JWT Token does not begin with Bearer String
+2019-11-12 12:20:36,092 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] getStores in Controller
+2019-11-12 12:20:36,095 INFO com.cg.pizzaordering.service.AdminService [http-nio-9088-exec-8] showStore method
+2019-11-12 12:20:36,097 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-8] Returning store list
+2019-11-12 12:20:38,801 WARN com.cg.pizzaordering.configuration.JwtRequestFilter [http-nio-9088-exec-9] JWT Token does not begin with Bearer String
+2019-11-12 12:20:38,804 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] getPizzas in Controller
+2019-11-12 12:20:38,810 INFO com.cg.pizzaordering.controller.AdminController [http-nio-9088-exec-9] Returning pizza list
+2019-11-12 12:24:02,288 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Starting PizzaOrderingApplication on DESKTOP-S7M44P4 with PID 816 (D:\HotelManagement\target\classes started by Admin in D:\HotelManagement)
+2019-11-12 12:24:02,288 DEBUG com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-11-12 12:24:02,288 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] The following profiles are active: production
+2019-11-12 12:24:03,756 DEBUG com.cg.pizzaordering.configuration.JwtRequestFilter [restartedMain] Filter 'jwtRequestFilter' configured for use
+2019-11-12 12:24:04,320 INFO com.cg.pizzaordering.PizzaOrderingApplication [restartedMain] Started PizzaOrderingApplication in 2.097 seconds (JVM running for 9004.058)

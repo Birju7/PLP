@@ -1,0 +1,330 @@
+2019-10-20 19:43:14,392 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 13480 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 19:43:14,402 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 19:43:14,403 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 19:43:19,142 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] Table 'C:\WINDOWS\TEMP\#sqlc14_d6_2' is read only
+2019-10-20 19:43:19,198 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.convertSQLException(InformationExtractorJdbcDatabaseMetaDataImpl.java:98)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:383)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:337)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 25 common frames omitted
+Caused by: java.sql.SQLException: Table 'C:\WINDOWS\TEMP\#sqlc14_d6_2' is read only
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2124)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2053)
+	at com.mysql.cj.jdbc.IterateBlock.doForAll(IterateBlock.java:56)
+	at com.mysql.cj.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2229)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:350)
+	... 38 common frames omitted
+2019-10-20 19:57:03,187 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 13376 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 19:57:03,187 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 19:57:03,187 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 19:57:07,851 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 5.181 seconds (JVM running for 5.972)
+2019-10-20 20:20:07,374 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 13376 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 20:20:07,375 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 20:20:07,375 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 20:20:08,697 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 1.401 seconds (JVM running for 1386.819)
+2019-10-20 21:01:07,384 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 13376 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 21:01:07,384 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 21:01:07,384 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 21:01:07,810 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.2035732531211827688.9087] specified for the base directory is not a directory
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.2035732531211827688.9087] specified for the base directory is not a directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:814)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:628)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:561)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:171)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 13 common frames omitted
+2019-10-20 21:01:30,645 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 13860 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 21:01:30,645 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 21:01:30,645 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 21:01:34,279 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] Table 'C:\WINDOWS\TEMP\#sqlc14_ff_2' is read only
+2019-10-20 21:01:34,317 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.convertSQLException(InformationExtractorJdbcDatabaseMetaDataImpl.java:98)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:383)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:337)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 25 common frames omitted
+Caused by: java.sql.SQLException: Table 'C:\WINDOWS\TEMP\#sqlc14_ff_2' is read only
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2124)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2053)
+	at com.mysql.cj.jdbc.IterateBlock.doForAll(IterateBlock.java:56)
+	at com.mysql.cj.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2229)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:350)
+	... 38 common frames omitted
+2019-10-20 21:01:52,733 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 21:01:52,733 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 21:01:52,733 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 21:01:57,453 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 5.351 seconds (JVM running for 6.099)
+2019-10-20 21:03:12,852 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 21:03:12,852 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 21:03:12,852 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 21:03:13,971 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] Error on delete of 'C:\WINDOWS\TEMP\#sqlc14_113_2.MYI' (Errcode: 13)
+2019-10-20 21:03:13,999 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.convertSQLException(InformationExtractorJdbcDatabaseMetaDataImpl.java:98)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:383)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:337)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 25 common frames omitted
+Caused by: java.sql.SQLException: Error on delete of 'C:\WINDOWS\TEMP\#sqlc14_113_2.MYI' (Errcode: 13)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2124)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2053)
+	at com.mysql.cj.jdbc.IterateBlock.doForAll(IterateBlock.java:56)
+	at com.mysql.cj.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2229)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:350)
+	... 38 common frames omitted
+2019-10-20 21:03:47,480 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 21:03:47,480 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 21:03:47,480 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 21:03:48,815 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 1.461 seconds (JVM running for 117.462)
+2019-10-20 22:03:25,749 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 22:03:25,749 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 22:03:25,749 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 22:03:27,095 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 1.442 seconds (JVM running for 3695.741)
+2019-10-20 22:03:43,409 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 22:03:43,409 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 22:03:43,409 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 22:03:43,816 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.3270829279376658665.9087] specified for the base directory is not a directory
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.3270829279376658665.9087] specified for the base directory is not a directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:814)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:628)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:561)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:171)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 13 common frames omitted
+2019-10-20 22:04:15,213 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 9044 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 22:04:15,213 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 22:04:15,214 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 22:04:15,659 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.3853278213833425084.9087] specified for the base directory is not a directory
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.3853278213833425084.9087] specified for the base directory is not a directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:814)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:628)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:561)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:171)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 13 common frames omitted
+2019-10-20 22:04:25,751 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 12744 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 22:04:25,751 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 22:04:25,751 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 22:04:27,299 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.6608558868338998135.9087] specified for the base directory is not a directory
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: The location [C:\Users\kiit1\AppData\Local\Temp\tomcat.6608558868338998135.9087] specified for the base directory is not a directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:814)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:628)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:561)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:171)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153)
+	... 13 common frames omitted
+2019-10-20 22:04:41,850 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 17352 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-20 22:04:41,866 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-20 22:04:41,867 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-20 22:04:46,434 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 5.066 seconds (JVM running for 5.902)

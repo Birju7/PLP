@@ -1,0 +1,106 @@
+2019-10-24 16:40:36,676 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 128 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-24 16:40:36,680 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-24 16:40:36,680 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-24 16:40:37,889 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 1.309 seconds (JVM running for 3384.952)
+2019-10-24 16:41:10,734 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 12304 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-24 16:41:10,750 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-24 16:41:10,750 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-24 16:41:14,719 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [restartedMain] Table 'C:\WINDOWS\TEMP\#sqla1c_385_2' is read only
+2019-10-24 16:41:14,780 ERROR org.springframework.boot.SpringApplication [restartedMain] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.cg.hotelmanagement.HotelManagementApplication.main(HotelManagementApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:403)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:378)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: Error accessing tables metadata
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:47)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:99)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.convertSQLException(InformationExtractorJdbcDatabaseMetaDataImpl.java:98)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:383)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.getTables(InformationExtractorJdbcDatabaseMetaDataImpl.java:337)
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:120)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:65)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:207)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:114)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:183)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:72)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:310)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:467)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:939)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	... 25 common frames omitted
+Caused by: java.sql.SQLException: Table 'C:\WINDOWS\TEMP\#sqla1c_385_2' is read only
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeQuery(StatementImpl.java:1200)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2124)
+	at com.mysql.cj.jdbc.DatabaseMetaData$2.forEach(DatabaseMetaData.java:2053)
+	at com.mysql.cj.jdbc.IterateBlock.doForAll(IterateBlock.java:56)
+	at com.mysql.cj.jdbc.DatabaseMetaData.getColumns(DatabaseMetaData.java:2229)
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.populateTablesWithColumns(InformationExtractorJdbcDatabaseMetaDataImpl.java:350)
+	... 38 common frames omitted
+2019-10-24 16:41:29,819 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Starting HotelManagementApplication on CSE1505022 with PID 6860 (C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement\target\classes started by 1505022 in C:\Users\kiit1\Documents\GitHub\Hotel-Management-System\Sprint6\REST\Sprint5_Restful\HotelManagement)
+2019-10-24 16:41:29,819 DEBUG com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Running with Spring Boot v2.1.9.RELEASE, Spring v5.1.10.RELEASE
+2019-10-24 16:41:29,819 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] The following profiles are active: production
+2019-10-24 16:41:34,211 INFO com.cg.hotelmanagement.HotelManagementApplication [restartedMain] Started HotelManagementApplication in 4.887 seconds (JVM running for 5.637)
+2019-10-24 17:32:02,462 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-3] getCities in Controller
+2019-10-24 17:32:02,470 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-3] showCity method
+2019-10-24 17:32:02,472 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-3] Returning city list
+2019-10-24 17:32:02,535 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-4] City added in Controller
+2019-10-24 17:32:09,282 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-5] getCities in Controller
+2019-10-24 17:32:09,285 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-5] showCity method
+2019-10-24 17:32:09,287 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-5] Returning city list
+2019-10-24 17:32:17,185 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-7] City removed with Id: 1
+2019-10-24 17:32:19,727 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-8] getCities in Controller
+2019-10-24 17:32:19,730 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-8] showCity method
+2019-10-24 17:32:19,732 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-8] Returning city list
+2019-10-24 17:33:17,001 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-9] City addded
+2019-10-24 17:33:17,008 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-9] City addded
+2019-10-24 17:33:17,014 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-9] City addded
+2019-10-24 17:33:20,137 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-10] getCities in Controller
+2019-10-24 17:33:20,142 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-10] showCity method
+2019-10-24 17:33:20,143 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-10] Returning city list
+2019-10-24 17:33:34,987 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-1] getCities in Controller
+2019-10-24 17:33:34,990 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-1] showCity method
+2019-10-24 17:33:34,992 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-1] Returning city list
+2019-10-24 17:34:14,721 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-3] getCities in Controller
+2019-10-24 17:34:14,728 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-3] showCity method
+2019-10-24 17:34:14,729 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-3] Returning city list
+2019-10-24 17:34:14,787 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-4] Hotel added
+2019-10-24 17:34:17,372 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-5] getHotels in Controller
+2019-10-24 17:34:17,379 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-5] Returning hotel list
+2019-10-24 17:34:55,956 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-7] Hotel updated with Id: 10
+2019-10-24 17:34:58,602 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-8] getCities in Controller
+2019-10-24 17:34:58,606 INFO com.cg.hotelmanagement.service.AdminService [http-nio-9088-exec-8] showCity method
+2019-10-24 17:34:58,608 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-8] Returning city list
+2019-10-24 17:35:02,366 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-9] getHotels in Controller
+2019-10-24 17:35:02,373 INFO com.cg.hotelmanagement.controller.AdminController [http-nio-9088-exec-9] Returning hotel list
